@@ -1,0 +1,21 @@
+<h1>Course</h1>
+
+<div class="row">
+    <div class="col s6 offset-s3">
+        <h2 class="header">{{course.title}}</h2>
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="{{course.image}}" style="max-width: 100px; height: auto" alt="{{title}}">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    {{!-- <p>{{title}}</p> --}}
+                    <p class="price"><b>{{course.price}}</b></p>
+                </div>
+                <div class="card-action">
+                    <a href="/buy/{{course.id}}">Buy the course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
